@@ -327,6 +327,7 @@ dt {
 }
 
 #your-playlists .scroll { 
+    
     display: grid;
     overflow-x: auto;
     overflow-y: hidden;
@@ -338,7 +339,12 @@ dt {
     flex-shrink: 0;
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
-}
+
+
+        
+        
+    }
+
 
 #your-playlists .playlist {
     background-color: #2699fb;
