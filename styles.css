@@ -1,14 +1,15 @@
 html {
     background-color: #020659;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body {
     margin: 0 auto;
     color: #ffffff;
     display: grid;
     width: 100%;
     max-width: 375px;
-   
+
 }
 
 
@@ -17,11 +18,12 @@ header {
     border: 2px solid #020873;
     background-color: #020873;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
 }
+
 h1 {
     font-family: "verdana-pro-condensed", sans-serif;
     font-weight: 500;
@@ -31,10 +33,11 @@ h1 {
     padding: 20px 0;
     color: #ffffff;
     font-variant: small-caps;
-    text-align: center; 
+    text-align: center;
     flex-grow: 1;
     transform: scale(1.5);
 }
+
 nav {
     color: #ffffff;
     padding: 10px 0;
@@ -42,24 +45,28 @@ nav {
     justify-content: space-between;
     align-items: center;
     display: none;
-   
+
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .2s ease-out;   
-    transition: max-height .2s ease-out;  
+    transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out;
 }
+
 nav li {
     margin: 0 10px;
 }
+
 nav a {
     color: #ffffff;
     text-decoration: none;
 }
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -67,6 +74,7 @@ label {
     position: relative;
     user-select: none;
 }
+
 label span {
     background-color: #ffffff;
     display: block;
@@ -75,7 +83,9 @@ label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-label span:before, label span:after {
+
+label span:before,
+label span:after {
     background: #ffffff;
     content: '';
     display: block;
@@ -84,27 +94,35 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
+
 label span:before {
     top: 5px;
 }
+
 label span:after {
     top: -5px;
 }
+
 input[type="checkbox"] {
     display: none;
 }
-input[type="checkbox"]:checked ~ ul {
+
+input[type="checkbox"]:checked~ul {
     max-height: 500px;
 }
-input[type="checkbox"]:checked ~ label span {
+
+input[type="checkbox"]:checked~label span {
     background: transparent;
 }
-input[type="checkbox"]:checked ~ label span:before {
+
+input[type="checkbox"]:checked~label span:before {
     transform: rotate(-45deg);
 }
-input[type="checkbox"]:checked ~ label span:after {
+
+input[type="checkbox"]:checked~label span:after {
     transform: rotate(45deg);
 }
+
 @media screen and (min-width: 375px) {
     nav ul {
         max-height: none;
@@ -115,8 +133,11 @@ input[type="checkbox"]:checked ~ label span:after {
         top: 0;
     }
 
-    
-    label, label span, input,[type="checkbox"] {
+
+    label,
+    label span,
+    input,
+    [type="checkbox"] {
         display: block;
     }
 
@@ -124,27 +145,36 @@ input[type="checkbox"]:checked ~ label span:after {
         display: block;
     }
 }
+
 @media screen and (min-width: 834px) {
     body {
-        max-width: 834px;   
+        max-width: 834px;
     }
-    label, label span, input,[type="checkbox"] {
+
+    label,
+    label span,
+    input,
+    [type="checkbox"] {
         display: none;
     }
+
     h1 {
         display: none;
     }
+
     header {
         display: block;
-        background: linear-gradient(to left, #030a8c 1%, #020873 99%);  
+        background: linear-gradient(to left, #030a8c 1%, #020873 99%);
         padding: 25px;
         text-align: center;
-        align-items: center; 
-        justify-content: space-between;   
-    } 
-    nav {
-        display: block; 
+        align-items: center;
+        justify-content: space-between;
     }
+
+    nav {
+        display: block;
+    }
+
     nav ul {
         max-height: none;
         overflow: visible;
@@ -153,11 +183,13 @@ input[type="checkbox"]:checked ~ label span:after {
         position: absolute;
         top: 0;
     }
+
     nav ul li {
         font-family: "verdana-pro-condensed", sans-serif;
         font-weight: 300;
         font-style: normal;
     }
+
     nav ul li:nth-child(1) {
         font-size: 1.8em;
         font-family: "verdana-pro", sans-serif;
@@ -167,32 +199,38 @@ input[type="checkbox"]:checked ~ label span:after {
         margin: 0 2px;
 
     }
+
     nav ul li:nth-child(2) {
         position: relative;
         left: -30px;
     }
+
     nav ul li:nth-child(3) {
         position: relative;
         left: -60px;
     }
+
     nav ul li:nth-child(4) {
         position: relative;
         left: -110px;
     }
+
     nav ul li:nth-child(5) {
         position: relative;
         left: -130px;
         transform: scale(1.1);
         margin-top: 8px;
-}   
+    }
+
     nav ul li :hover {
         background-color: #590242;
         border-radius: 30px;
         display: inline-block;
         font-weight: 400;
         margin-top: 1px;
-    }    
+    }
 }
+
 /* tablet Navigation*/
 
 
@@ -207,21 +245,23 @@ main {
 /*(375px) Mobile Only - Section */
 section#station {
     padding: 6px;
-    background: linear-gradient(to right, #030a8c 5%, #000006 95%);  
+    background: linear-gradient(to right, #030a8c 5%, #000006 95%);
     color: #ffffff;
 }
+
 section#station h2 {
     font-size: 1em;
     transform: scale(1.4);
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-family: "verdana-pro", Tahoma, sans-serif;
     font-weight: 500;
     font-style: normal;
-    margin-left:97px;
+    margin-left: 97px;
     margin-bottom: 5px;
-    position:relative;
+    position: relative;
     top: -7px;
 }
+
 section#station p {
     font-size: 1em;
     font-family: "verdana-pro-condensed", sans-serif;
@@ -229,8 +269,9 @@ section#station p {
     font-style: normal;
     width: 275px;
     margin-left: 46px;
-   
+
 }
+
 /* End of (375px) Mobile Only - Section */
 
 
@@ -239,21 +280,22 @@ section#station p {
 @media screen and (min-width: 834px) {
 
     section#station h2 {
-        position:relative;
+        position: relative;
         top: -7px;
         left: 72px;
         text-align: justify;
     }
-    
+
     section#station p {
         width: 764px;
-        position:relative;
+        position: relative;
         top: -9px;
         left: -22px;
         text-align: justify;
     }
 
 }
+
 /*End of (834px) Tablet Only - Section */
 
 
@@ -268,6 +310,7 @@ section#station p {
     max-width: 375px;
     background-color: #ffffff;
 }
+
 #trending h2 {
     width: 215px;
     margin-top: 35px;
@@ -275,7 +318,8 @@ section#station p {
     position: relative;
     top: -14px;
 }
-#trending .scroll { 
+
+#trending .scroll {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -284,13 +328,15 @@ section#station p {
     height: 460px;
     width: 100%;
 }
+
 #trending section.song {
-  position: relative;
-  top: 55px;
-  right: -10px;
-  width: calc(375px - 45px); 
-  flex-shrink: 0;
+    position: relative;
+    top: 55px;
+    right: -10px;
+    width: calc(375px - 45px);
+    flex-shrink: 0;
 }
+
 #trending img {
     width: 311px;
     max-width: 311px;
@@ -298,73 +344,80 @@ section#station p {
     margin-right: 2px;
     margin-bottom: -12px;
 }
-#trending h3 {   
-      position: relative;
-      top: -3px;
-      left: 0;
-      margin-top: 9px;
-      padding: 10px;
-      font-family: "verdana-pro", sans-serif;
-      font-weight: 600;
-      font-style: normal;
+
+#trending h3 {
+    position: relative;
+    top: -3px;
+    left: 0;
+    margin-top: 9px;
+    padding: 10px;
+    font-family: "verdana-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
+
 #trending figure {
     background-size: 100%;
-    margin: 0;    
+    margin: 0;
 }
- #trending figcaption {
+
+#trending figcaption {
     background-color: rgba(236, 233, 233, 0.768);
     color: #590242;
     width: 311px;
-    height: 68px;  
-    position:relative;
+    height: 68px;
+    position: relative;
     top: -69px;
 }
+
 dl {
-    display: flex;  
+    display: flex;
     position: relative;
     top: -20px;
-    left: 10px; 
+    left: 10px;
 }
+
 dt {
     padding-right: 5px;
     font-family: "verdana-pro-condensed", sans-serif;
     font-weight: 300;
     font-style: italic;
 }
+
 dd {
     margin-left: 5px;
     margin-top: 1px;
     padding-right: 5px;
 }
+
 #trending audio {
- position: relative;
- bottom: 300px; 
- left: 0; 
- margin: 0 auto;
- opacity: 0.8;
- width: 311px;
- max-width: 311px;
+    position: relative;
+    bottom: 300px;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.8;
+    width: 311px;
+    max-width: 311px;
 }
 
 audio::-webkit-media-controls-panel {
     background-color: #2723235d;
- 
-  }
+
+}
 
 audio::-webkit-media-controls-play-button {
-    background-color:  #ffffff;
-    border-radius: 50%;
-    filter: brightness(200%) contrast(200%);
-    
-  }
-
-  audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
     border-radius: 50%;
     filter: brightness(200%) contrast(200%);
-  }  
-  
+
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+    filter: brightness(200%) contrast(200%);
+}
+
 
 .more {
     text-decoration: none;
@@ -381,28 +434,35 @@ audio::-webkit-media-controls-play-button {
     top: -113px;
     left: 20px;
 }
+
 .more:hover {
     background-color: #020659;
 }
+
 /*  scrollbar for #trending */
 #trending ::-webkit-scrollbar {
     width: 6px;
-    
+
 }
+
 #trending ::-webkit-scrollbar-track {
-    background-color: #f264da71;  
+    background-color: #f264da71;
 }
+
 #trending ::-webkit-scrollbar-thumb {
     background-color: #020659;
 }
+
 #trending ::-webkit-scrollbar-thumb:hover {
     background-color: #590242;
 }
+
 @media screen and (min-width: 834px) {
     #trending {
         width: 100%;
         max-width: 834px;
     }
+
     #trending h2 {
         transform: scale(0.8);
         position: relative;
@@ -410,12 +470,14 @@ audio::-webkit-media-controls-play-button {
         z-index: 1;
         font: 100;
     }
+
     .more {
         position: absolute;
         top: -113px;
         left: 647px;
     }
 }
+
 /*end of scrollbar for #trending */
 
 /* end of trending playlist*/
@@ -435,14 +497,16 @@ audio::-webkit-media-controls-play-button {
     max-width: 355px;
     margin-top: 50px;
 }
+
 #your-playlists h2 {
     color: #590242;
     width: 200px;
     position: relative;
     top: -65px;
-    left: 22px;   
+    left: 22px;
 }
-#your-playlists .scroll {   
+
+#your-playlists .scroll {
     display: grid;
     overflow-x: auto;
     overflow-y: hidden;
@@ -454,13 +518,14 @@ audio::-webkit-media-controls-play-button {
     flex-shrink: 0;
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
-    scrollbar-color: #020659  #2004d955;   
+    scrollbar-color: #020659 #2004d955;
 }
+
 #your-playlists .playlist {
     background-color: #2699fb;
     margin-bottom: 5px;
     margin-right: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     padding: 10px;
     height: 265px;
@@ -469,14 +534,17 @@ audio::-webkit-media-controls-play-button {
     top: -4px;
     left: 10px;
 }
+
 #your-playlists .playlist:hover {
     transform: translateY(-5px);
 }
+
 #your-playlists img {
     width: 146px;
     margin: 0 auto;
     display: block;
 }
+
 #your-playlists h3 {
     margin: 10px 10px 10px 0;
     color: #ffffff;
@@ -487,6 +555,7 @@ audio::-webkit-media-controls-play-button {
     font-style: normal;
     text-transform: uppercase;
 }
+
 #your-playlists p {
     margin: 0 auto;
     color: #d7f9d7;
@@ -497,12 +566,13 @@ audio::-webkit-media-controls-play-button {
     font-weight: 200;
     font-style: italic;
 }
+
 .more-playlists {
-    text-decoration: none; 
-    background-color: #590242; 
+    text-decoration: none;
+    background-color: #590242;
     color: #ffffff;
     border-radius: 5px;
-    padding: 10px; 
+    padding: 10px;
     width: 146px;
     height: 20px;
     margin: 0 auto;
@@ -511,58 +581,66 @@ audio::-webkit-media-controls-play-button {
     right: 176px;
     text-align: center;
 }
+
 .more-playlists:hover {
     background-color: #020659;
 }
+
 @media screen and (min-width: 834px) {
     #your-playlists {
         width: 100%;
-        max-width:397px;
+        max-width: 397px;
         float: left;
     }
+
     #your-playlists h2 {
         transform: scale(0.8);
         position: relative;
         top: -88px;
         z-index: 1;
     }
-    #your-playlists .scroll {     
+
+    #your-playlists .scroll {
         display: grid;
-        grid-template-columns: 3fr; 
-        grid-auto-rows: minmax(100px, 397px); 
+        grid-template-columns: 3fr;
+        grid-auto-rows: minmax(100px, 397px);
         overflow-x: hidden;
-        overflow-y: auto; 
+        overflow-y: auto;
         position: relative;
         top: -9px;
-        right: 212px; 
-        height: 325px; 
+        right: 212px;
+        height: 325px;
         width: 417px;
     }
+
     #your-playlists .playlist {
-        display: grid; 
-        grid-auto-flow: column; 
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         width: 100%;
-        max-width: 397px; 
+        max-width: 397px;
         height: auto;
         position: relative;
-        top: 8px; 
-        
+        top: 8px;
+
     }
+
     #your-playlists img {
         width: 100px;
         margin: auto;
-      
+
     }
+
     #your-playlists h3 {
         width: 250px;
         position: relative;
         top: -12px;
-        font-size:medium;
-    
+        font-size: medium;
+
     }
+
     #your-playlists p {
-        width:189px;
+        width: 189px;
         position: relative;
         top: 24px;
         right: 65px;
@@ -571,12 +649,14 @@ audio::-webkit-media-controls-play-button {
         font-weight: 300;
         font-style: normal;
     }
+
     .more-playlists {
         position: absolute;
         top: 335px;
         left: -405px;
     }
 }
+
 /* end of your playlist*/
 
 
@@ -589,7 +669,7 @@ audio::-webkit-media-controls-play-button {
     padding: 10px;
     position: relative;
     top: -50px;
-    height:300px;
+    height: 300px;
     width: 100%;
     max-width: 355px;
     margin-top: 160px;
@@ -598,8 +678,9 @@ audio::-webkit-media-controls-play-button {
 
 
 
-  
+
 }
+
 #curated h2 {
     color: #590242;
     position: relative;
@@ -607,7 +688,8 @@ audio::-webkit-media-controls-play-button {
     width: 233px;
     left: 22px;
 }
-#curated .scroll { 
+
+#curated .scroll {
     display: grid;
     overflow-x: auto;
     overflow-y: hidden;
@@ -619,13 +701,14 @@ audio::-webkit-media-controls-play-button {
     flex-shrink: 0;
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
-    scrollbar-color: #020659  #020873;
+    scrollbar-color: #020659 #020873;
 }
+
 #curated .playlist {
     background-color: #020659;
     margin-bottom: 5px;
     margin-right: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     padding: 10px;
     height: 265px;
@@ -634,14 +717,17 @@ audio::-webkit-media-controls-play-button {
     top: 15px;
     left: 11px;
 }
+
 #curated .playlist:hover {
     transform: translateY(-5px);
 }
+
 #curated img {
     max-width: 100%;
     display: block;
     margin-bottom: 10px;
 }
+
 #curated h3 {
     color: #ffffff;
     margin-bottom: 5px;
@@ -653,6 +739,7 @@ audio::-webkit-media-controls-play-button {
     font-style: normal;
     text-transform: uppercase;
 }
+
 #curated p {
     color: #ffffff;
     margin: 0 auto;
@@ -663,6 +750,7 @@ audio::-webkit-media-controls-play-button {
     font-weight: 200;
     font-style: italic;
 }
+
 .more-curated {
     text-decoration: none;
     background-color: #590242;
@@ -677,14 +765,16 @@ audio::-webkit-media-controls-play-button {
     right: 176px;
     text-align: center;
 }
+
 .more-curated:hover {
     background-color: #020659;
-}  
+}
+
 @media screen and (min-width: 834px) {
     #curated {
         width: 100%;
-        max-width:397px;
-        height:307px;
+        max-width: 397px;
+        height: 307px;
         float: left;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -692,53 +782,56 @@ audio::-webkit-media-controls-play-button {
         padding: 10px;
         position: relative;
         top: -110px;
-        left:0;
-        
-    
+        left: 0;
+
+
     }
+
     #curated h2 {
         transform: scale(0.8);
         position: relative;
         top: -88px;
         z-index: 1;
     }
-    #curated .scroll {     
+
+    #curated .scroll {
         display: grid;
-        grid-template-columns: 3fr; 
-        grid-auto-rows: minmax(100px, auto); 
+        grid-template-columns: 3fr;
+        grid-auto-rows: minmax(100px, auto);
         overflow-x: hidden;
-        overflow-y: auto; 
+        overflow-y: auto;
         position: relative;
         top: -9px;
-        left: -243px; 
+        left: -243px;
         height: 325px;
         width: 417px;
     }
+
     #curated .playlist {
-        display: grid; 
-        grid-auto-flow: column; 
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         width: 100%;
-        max-width: 397px; 
-        height: auto; 
+        max-width: 397px;
+        height: auto;
         position: relative;
-        top:3px;
-        
+        top: 3px;
+
     }
 
     #curated img {
         width: 100px;
         margin: auto;
-      
+
     }
 
     #curated h3 {
         width: 250px;
         position: relative;
         top: -12px;
-        font-size:medium;
-        
-       
+        font-size: medium;
+
+
     }
 
     #curated p {
@@ -757,12 +850,13 @@ audio::-webkit-media-controls-play-button {
         left: 240px;
     }
 }
+
 /* End of curated playlist*/
 
 
 
 /*Footer*/
-footer {   
+footer {
     padding: 20px 0;
     text-align: center;
 }
@@ -772,13 +866,13 @@ footer p {
     font-size: .75em;
     position: relative;
     top: -62px;
-    color:#590242;
+    color: #590242;
 }
 
 @media screen and (min-width: 834px) {
-    footer {   
-      height: 10px;
-        
+    footer {
+        height: 10px;
+
     }
 }
 
