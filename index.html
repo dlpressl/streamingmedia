@@ -10,20 +10,13 @@
     <title>MuzakMaker - Smooth Jazz</title>
 </head>
 <body>
-    <header>   
+    <header> 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle">
+        <label for="nav-toggle">
         <span></span> 
-    </label>
-    <h1>MuzakMaker</h1>
-    </header>
+        </label>
+        <h1>MuzakMaker</h1>
 
-    <main>
-        <section id="station">
-            <h2>Smooth Jazz</h2>
-            <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-        </section>
-        
         <nav>
             <ul>
                 <li><a href="#station">MuzakMaker</a></li>
@@ -33,7 +26,14 @@
                 <li><a href="user"> <img src="images/duke-silver.png" alt="user profile picture"></a></li>
             </ul>
         </nav>
+    </header>
 
+    <main>
+        <section id="station">
+            <h2>Smooth Jazz</h2>
+            <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+        </section>
+              
         <section id="trending">
             <h2>Trending Songs</h2>
             <div class="scroll">  
@@ -48,14 +48,13 @@
                             </dl>
                         </figcaption>
                     </figure>
-                    <audio src="audio/aloma.mp3" controls></audio>
+                    <audio id="player" src="audio/aloma.mp3" preload=”metadata” controls="true"></audio>
                 </section>
-
                 <section class="song">             
                     <figure>
                         <img src="images/my-road-cover.png" alt="My Road by Artist Nesterouk">
                         <figcaption>
-                            <h3>My Road</h3>
+                            <h3>MY ROAD</h3>
                             <dl>
                                 <dt>Artist</dt>
                                 <dd>Nesterouk</dd>
@@ -64,12 +63,11 @@
                     </figure>
                     <audio src="audio/my-road.mp3" controls></audio>
                 </section>
-
                 <section class="song">              
                     <figure>
                         <img src="images/papaya-cover.png" alt="Papaya by Artist Dredstudio">
                         <figcaption>
-                            <h3>Papaya</h3>
+                            <h3>PAPAYA</h3>
                             <dl>
                                 <dt>Artist</dt>
                                 <dd>Dredstudio</dd>
@@ -78,12 +76,11 @@
                     </figure>
                     <audio src="audio/papaya.mp3" controls></audio>
                 </section>
-
                 <section class="song">          
                     <figure>
                         <img src="images/smoothies-cover.png" alt="Smoothies by Artist Black Rhomb">
                         <figcaption>
-                            <h3>Smoothies</h3>
+                            <h3>SMOOTHIES</h3>
                             <dl>
                                 <dt>Artist</dt>
                                 <dd>Black Rhomb</dd>
@@ -97,7 +94,7 @@
                     <figure>
                         <img src="images/successful-performance-cover.png" alt="Successful Performance by Artist Ricky Bombino">
                         <figcaption>
-                            <h3>Successful Performance</h3>
+                            <h3>SUCCESSFUL PERFORMANCE</h3>
                             <dl>
                                 <dt>Artist</dt>
                                 <dd>Ricky Bombino</dd>
@@ -107,7 +104,7 @@
                     <audio src="audio/successful-performance.mp3" controls></audio>
                 </section>
             </div>
-        </section>      
+        </section>  
 
         <section id="your-playlists">
             <a href="#more-trending" class="more">More trending</a>
@@ -118,25 +115,21 @@
                     <h3>Best of 2020</h3>
                     <p>The music that got you through the lock down.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/pumpkin-spice-cover.png" alt="Pumpkin Spice">
                     <h3>Pumpkin Spice</h3>
                     <p>Creamy and spicy just like your favorite autumnal latte.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/quiet-storm-cover.png" alt="Quiet Storm">
                     <h3>Quiet Storm</h3>
                     <p>Slow tempos and relaxed rhythms.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/smooth-jazz-cover.png" alt="Smooth Jazz">
                     <h3>Smooth Jazz</h3>
                     <p>The pioneers of smooth jazz.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/smooth-study-cover.png" alt="Smooth Study">
                     <h3>Smooth Study</h3>
@@ -160,19 +153,16 @@
                     <h3>Dinner Party</h3>
                     <p>Background music to give your party life.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/mellow-cover.png" alt="Mellow">
                     <h3>Mellow</h3>
-                    <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                    <p>Relax after a stressful day with this mellow collection</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/jazz-chill-cover.png" alt="Jazz and Chill">
                     <h3>Jazz and Chill</h3>
                     <p>Set the mood with these silky sounds.</p>
                 </section>
-
                 <section class="playlist">
                     <img src="images/smooth-saxophone-cover.png" alt="Jazz Saxophone">
                     <h3>Jazz Saxophone</h3>
